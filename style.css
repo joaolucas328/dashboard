@@ -1,0 +1,92 @@
+div.chart1 {
+    width: 400px;
+    height: 400px;
+}
+*{
+    overflow-x: hidden;
+    font-family: 'Roboto';
+    font-weight:bold;
+}
+
+.container {
+    display: grid;
+    border:solid 1px blue;
+    height: 100vh;
+    width: 100vw;
+    gap: 20px;
+    background-color:#F5F5F5;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-areas:
+    "menu header header header header"
+    "menu card1 card2 card3 cardFaixa"
+    "menu cardG cardG cardG cardFaixa"
+    "menu caixa caixa caixa caixa"
+    "footer footer footer footer footer";
+    
+}
+
+
+.menu{
+    background-color: #000000;
+    grid-area: menu;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+.header {
+    background-color: rgb(255, 255, 255);
+    grid-area: header;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card1{
+    background-color: rgb(255, 255, 255);
+    grid-area: card1;
+    border-radius: 10px;
+   
+    
+}
+
+.card2 {
+    background-color: rgb(255, 255, 255);
+    grid-area: card2;
+    border-radius: 10px;
+    
+}
+
+.card3 {
+    background-color: rgb(255, 255, 255);
+    grid-area: card3;
+    border-radius: 10px;
+    
+}
+
+.cardFaixa {
+    background-color: rgb(255, 255, 255);
+    grid-area: cardFaixa;
+    border-radius: 10px;
+   
+
+}
+
+.cardG {
+    background-color: rgb(255, 255, 255);
+    grid-area: cardG;
+    border-radius: 10px;
+}
+.caixa {
+    background-color: rgb(255, 255, 255);
+    grid-area: caixa;
+    border-radius: 10px;
+}
+
+.footer {
+    background-color: #000000;
+    grid-area: footer;
+}
+
+
+
+
