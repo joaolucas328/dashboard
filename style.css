@@ -1,18 +1,18 @@
 div.chart1 {
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 100px;
 }
 *{
-    overflow-x: hidden;
     font-family: 'Roboto';
     font-weight:bold;
+    overflow-x: none;
 }
+
 
 .container {
     display: grid;
-    border:solid 1px blue;
     height: 100vh;
-    width: 100vw;
+    max-width:100vw;
     gap: 20px;
     background-color:#F5F5F5;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -39,28 +39,30 @@ div.chart1 {
     grid-area: header;
     border-radius: 10px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
 }
 .card1{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(88, 87, 87);
     grid-area: card1;
     border-radius: 10px;
-   
+    padding: 15px;
     
 }
 
 .card2 {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(88, 87, 87);
     grid-area: card2;
     border-radius: 10px;
-    
+     padding: 15px;
 }
 
 .card3 {
-    background-color: rgb(255, 255, 255);
+    background-color:  rgb(88, 87, 87);
     grid-area: card3;
     border-radius: 10px;
-    
+     padding: 15px;
 }
 
 .cardFaixa {
@@ -87,6 +89,28 @@ div.chart1 {
     grid-area: footer;
 }
 
+.divIcone {
+    width: 40px;
+    height: 40px;
+    background-color: #25C935;
+    border-radius: 5px;;
+}
 
+.caixaIcone {
+    width: 200px;
+    height: 50px;
+    background-color: rgb(68, 67, 67);
+    border-radius: 5px;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
+.divIcone2 {
+    width: 40px;
+    height: 40px;
+    background-color: #292e2a;
+    border-radius: 50%;
+}
 
