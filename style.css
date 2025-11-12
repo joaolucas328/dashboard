@@ -1,7 +1,4 @@
-div.chart1 {
-    width: 200px;
-    height: 100px;
-}
+
 *{
     font-family: 'Clash Display SemiBold';
     overflow-x: none;
@@ -121,6 +118,7 @@ div.chart1 {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    cursor: pointer;
 }
 
 .divIcone2 {
@@ -142,6 +140,8 @@ div.chart1 {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    cursor: pointer;
+    
 }
 
 .caixaIcone3 {
@@ -152,6 +152,7 @@ div.chart1 {
     gap: 20px;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 
@@ -167,7 +168,7 @@ div.chart1 {
 
 .p1 {
     color: rgb(224, 224, 224);
-    font-size: 25px;
+    font-size: 23px;
 }
 
 .texto {
@@ -177,4 +178,10 @@ div.chart1 {
     width: 100%;
     height: 30px;
     align-items: center;
+}
+
+.card1:hover, .card2:hover, .card3:hover {
+    background-color: rgb(71, 71, 71);
+    cursor: pointer;
+    transition: 0.3s;
 }
