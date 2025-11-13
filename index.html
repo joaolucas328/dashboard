@@ -1,173 +1,239 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dashboard</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://cdn.boxicons.com/3.0.3/fonts/basic/boxicons.min.css' rel='stylesheet'>
-    <link href="https://db.onlinewebfonts.com/c/063b1ecb77f04e4643e50307b2c53d9a?family=Clash+Display+Semibold" rel="stylesheet">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-            </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://cdn.boxicons.com/3.0.3/fonts/basic/boxicons.min.css' rel='stylesheet'>
+  <link href="https://db.onlinewebfonts.com/c/063b1ecb77f04e4643e50307b2c53d9a?family=Clash+Display+Semibold"
+    rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+  </style>
 </head>
+
 <body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <div class="container">
+    <div class="menu">
+      <div class="caixaIcone3" style="justify-content: center;width: 270px;height: 100px; flex-wrap: wrap;">
+        <div class="divIcone"> <i style="font-size: 40px;" class='bxr  bx-key'></i> </div>
+        <p class="p1" style="font-size: 40px;">KeyBoard</p>
+        <p class="p1" style="font-size: 15px;">A chave para o seu sucesso</p>
+      </div>
 
-   <div class="container">
-        <div class="menu">
-          <div class="caixaIcone3" style="justify-content: center;width: 270px;height: 100px; flex-wrap: wrap;">
-            <div class="divIcone"> <i style="font-size: 40px;" class='bxr  bx-key'    ></i>  </div>
-              <p class="p1" style="font-size: 40px;">KeyBoard</p>
-              <p class="p1" style="font-size: 15px;">A chave para o seu sucesso</p>
-          </div>
-          
 
-          <div class="caixaIcone2" style="height: 500px;">
-            <div class="caixaIcone3">
-              <div class="divIcone"><i class='bxr  bx-bookmark-minus-alt'    ></i> </div>
-              <p class="p1">Histórico</p>
-            </div>
-            
-            <div class="caixaIcone3" >
-              <div class="divIcone"><i class='bxr  bx-pulse'    ></i> </div>
-              <p class="p1">Análises</p>
-            </div>
-
-            <div class="caixaIcone3" >
-              <div class="divIcone"><i class='bx  bx-bar-chart-big'    ></i> </div>
-              <p class="p1">Contribuidores</p>
-            </div>
-
-            <div class="caixaIcone3" >
-              <div class="divIcone"><i class='bxr  bx-bell'    ></i> </div>
-              <p class="p1">Novidades</p>
-            </div>
-
-            <div class="caixaIcone3" >
-              <div class="divIcone"><i class='bxr  bx-database-alt'    ></i> </div>
-              <p class="p1">Mais Dashboards</p>
-            </div>
-          </div>
-          <div class="caixaIcone2" style="height: 200px; gap: 20px;">
-            <div class="caixaIcone3">
-            <div class="divIcone"><i class='bxr  bx-user'    ></i> </div>
-              <p class="p1">Usuário</p>
-              </div>
-            <div class="caixaIcone3">
-              <div class="divIcone"><i class='bxr  bx-cog'    ></i> </div>
-              <p class="p1">Configurações</p>
-              </div>
-          </div>
-          
-        </div>
-        
-
-        <div class="header"><p style="font-size: 25px;font-weight: bold;">Dashboard - Rendimento mensal</p> 
-
-          <div class="textoHeader"><i class='bx  bx-bar-chart-big'    ></i> <p style="font-size: 15px;">Criador: João Lucas Martins</p></div>
-          <div class="textoHeader"><i class='bx  bx-bar-chart-big'    ></i> <p style="font-size: 15px;">Criado em: 20/08/2009</p></div>
-          
-
-          <div class="caixaIcone" style="background-color: white;">
-            <div class="divIcone"><i class='bxr  bx-share'    ></i> </div>
-            <div class="divIcone"><i class='bxr  bx-info-shield'    ></i> </div>
-            <div class="divIcone"><i  style="font-size: 40px;" class='bxr  bx-toggle-right'    ></i> </div>
-          </div>
+      <div class="caixaIcone2" style="height: 500px;">
+        <div class="caixaIcone3">
+          <div class="divIcone"><i class='bxr  bx-bookmark-minus-alt'></i> </div>
+          <p class="p1">Histórico</p>
         </div>
 
-        <div class="card1"> <div class="divIcone2"><i  style="font-size: 30px;" class='bxr  bx-database-alt'    ></i>  </div> <p>Total De Saidas Mensais:</p> <p class="p1">R$500,00</p></div>
-        <div class="card2"><div class="divIcone2"> <i style="font-size: 30px;" class='bxr  bx-database-alt'    ></i> </div> <p>Total De Entradas Mensais:</p><p class="p1">R$500,00</p></div>
-        <div class="card3"><div class="divIcone2"><i style="font-size: 30px;" class='bxr  bx-database-alt'    ></i>  </div> <p>Saldo Disponivel:</p><p class="p1">R$500,00</p></div>
-
-        <div class="cardFaixa">
-          
+        <div class="caixaIcone3">
+          <div class="divIcone"><i class='bxr  bx-pulse'></i> </div>
+          <p class="p1">Análises</p>
         </div>
 
-        <div class="cardG"> <p>Overview</p>
-          <div>
-            <canvas id="myChart"></canvas>
-          </div>
-          
-          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-          
-          <script>
-            const ctx = document.getElementById('myChart');
-          
-            new Chart(ctx, {
-              type: 'bar',
-              data: {
-                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                datasets: [{
-                  label: '# of Votes',
-                  data: [12, 19, 3, 5, 2, 3],
-                  borderWidth: 1
-                }]
-              },
-              options: {
-                scales: {
-                  y: {
-                    beginAtZero: true
-                  }
-                }
+        <div class="caixaIcone3">
+          <div class="divIcone"><i class='bx  bx-bar-chart-big'></i> </div>
+          <p class="p1">Contribuidores</p>
+        </div>
+
+        <div class="caixaIcone3">
+          <div class="divIcone"><i class='bxr  bx-bell'></i> </div>
+          <p class="p1">Novidades</p>
+        </div>
+
+        <div class="caixaIcone3">
+          <div class="divIcone"><i class='bxr  bx-database-alt'></i> </div>
+          <p class="p1">Mais Dashboards</p>
+        </div>
+      </div>
+      <div class="caixaIcone2" style="height: 200px; gap: 20px;">
+        <div class="caixaIcone3">
+          <div class="divIcone"><i class='bxr  bx-user'></i> </div>
+          <p class="p1">Usuário</p>
+        </div>
+        <div class="caixaIcone3">
+          <div class="divIcone"><i class='bxr  bx-cog'></i> </div>
+          <p class="p1">Configurações</p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="header">
+      <p style="font-size: 25px;font-weight: bold;">Dashboard - Rendimento mensal</p>
+
+      <div class="textoHeader"><i class='bx  bx-bar-chart-big'></i>
+        <p style="font-size: 15px;">Criador: João Lucas Martins</p>
+      </div>
+      <div class="textoHeader"><i class='bx  bx-bar-chart-big'></i>
+        <p style="font-size: 15px;">Criado em: 20/08/2009</p>
+      </div>
+
+
+      <div class="caixaIcone" style="background-color: white;">
+        <div class="divIcone"><i class='bxr  bx-share'></i> </div>
+        <div class="divIcone"><i class='bxr  bx-info-shield'></i> </div>
+        <div class="divIcone"><i style="font-size: 40px;" class='bxr  bx-toggle-right'></i> </div>
+      </div>
+    </div>
+
+    <div class="card1">
+      <div class="divIcone2"><i style="font-size: 30px;" class='bxr  bx-database-alt'></i> </div>
+      <p>Total De Saidas Mensais:</p>
+      <p class="p1">R$500,00</p>
+    </div>
+    <div class="card2">
+      <div class="divIcone2"> <i style="font-size: 30px;" class='bxr  bx-database-alt'></i> </div>
+      <p>Total De Entradas Mensais:</p>
+      <p class="p1">R$500,00</p>
+    </div>
+    <div class="card3">
+      <div class="divIcone2"><i style="font-size: 30px;" class='bxr  bx-database-alt'></i> </div>
+      <p>Saldo Disponivel:</p>
+      <p class="p1">R$500,00</p>
+    </div>
+
+    <div class="cardFaixa">
+      <p class="p1" style="color: black;">Comparação Lucro Mensal</p>
+
+      <div>
+        <canvas id="myPie"></canvas>
+      </div>
+
+      <script>
+        const ct = document.getElementById('myPie');
+
+        new Chart(ct, {
+          type: 'doughnut',
+          data: {
+            labels: ['Assinatura Netflix', 'Tênis Nike', 'PC Gamer', 'Camisa Do Ben 10', 'Maçã', 'GTA 6'],
+            datasets: [{
+              label: 'Lucro',
+              data: [9000.30, 8100.67, 15500.43, 18700.99, 10000.01, 1000.00],
+              borderWidth: 2,
+              backgroundColor: ['#25C935', '#000000', ' #25C935', '#000000',],
+            }]
+          }
+      });
+      </script>
+
+      <p class="p1" style="color: black;">Comparação Gasto Mensal</p>
+
+      <div>
+        <canvas id="myPie2"></canvas>
+      </div>
+
+      <script>
+        const cts = document.getElementById('myPie2');
+
+        new Chart(cts, {
+          type: 'doughnut',
+          data: {
+            labels: ['Assinatura Netflix', 'Tênis Nike', 'PC Gamer', 'Camisa Do Ben 10', 'Maçã', 'GTA 6'],
+            datasets: [{
+              label: 'Lucro',
+              data: [9000.30, 8100.67, 15500.43, 18700.99, 10000.01, 1000.00],
+              borderWidth: 2,
+              backgroundColor: ['#25C935', '#000000', ' #25C935', '#000000',]
+              
+            }]}});
+      </script>
+
+    </div>
+
+    <div class="cardG">
+      <p>Overview - Vendas do Mês</p>
+
+      <div>
+        <canvas id="myChart"></canvas>
+      </div>
+
+      <script>
+        const ctx = document.getElementById('myChart');
+
+        new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: ['Assinatura Netflix', 'Tênis Nike', 'PC Gamer', 'Camisa Do Ben 10', 'Maçã', 'GTA 6'],
+            datasets: [{
+              label: 'Maior Media De Vendas',
+              data: [127, 81, 139, 200, 55, 10],
+              borderWidth: 2,
+              backgroundColor: ['#25C935', '#000000', ' #25C935', '#000000',]
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
               }
-            });
-          </script>
-        </div>
+            }
+          },
+        });
+      </script>
+    </div>
 
 
-        <div class="caixa">
-          <p style="font-size: 25px;">Histórico de Transições Recentes</p> 
-          <div class="texto">
-          <p>Nome Elegante</p> 
-          <p style="color: rgb(88, 88, 88)">ID: xxxxx</p>
-          <p>Forma de Pagamento: Pix</p>
-          <p style="color: rgb(88, 88, 88)">Data: 10/11/2025</p>
-          <p>Valor: R$1500,00</p>
-          <p style="color: rgb(88, 88, 88)">ID Produtos(s): xxxxx</p>
-        </div>
+    <div class="caixa">
+      <p style="font-size: 25px;">Histórico de Transições Recentes</p>
+      <div class="texto">
+        <p>Nome Elegante</p>
+        <p style="color: rgb(88, 88, 88)">ID: xxxxx</p>
+        <p>Forma de Pagamento: Pix</p>
+        <p style="color: rgb(88, 88, 88)">Data: 10/11/2025</p>
+        <p>Valor: R$1500,00</p>
+        <p style="color: rgb(88, 88, 88)">ID Produtos(s): xxxxx</p>
+      </div>
 
-        <div class="texto">
-          <p>Nome Elegante</p> 
-          <p style="color: rgb(88, 88, 88)">ID: xxxxx</p>
-          <p>Forma de Pagamento: Pix</p>
-          <p style="color: rgb(88, 88, 88)">Data: 10/11/2025</p>
-          <p>Valor: R$1500,00</p>
-          <p style="color: rgb(88, 88, 88)">ID Produtos(s): xxxxx</p>
-        </div>
+      <div class="texto">
+        <p>Nome Elegante</p>
+        <p style="color: rgb(88, 88, 88)">ID: xxxxx</p>
+        <p>Forma de Pagamento: Pix</p>
+        <p style="color: rgb(88, 88, 88)">Data: 10/11/2025</p>
+        <p>Valor: R$1500,00</p>
+        <p style="color: rgb(88, 88, 88)">ID Produtos(s): xxxxx</p>
+      </div>
 
-        <div class="texto">
-          <p>Nome Elegante</p> 
-          <p style="color: rgb(88, 88, 88)">ID: xxxxx</p>
-          <p>Forma de Pagamento: Pix</p>
-          <p style="color: rgb(88, 88, 88)">Data: 10/11/2025</p>
-          <p>Valor: R$1500,00</p>
-          <p style="color: rgb(88, 88, 88)">ID Produtos(s): xxxxx</p>
-        </div>
+      <div class="texto">
+        <p>Nome Elegante</p>
+        <p style="color: rgb(88, 88, 88)">ID: xxxxx</p>
+        <p>Forma de Pagamento: Pix</p>
+        <p style="color: rgb(88, 88, 88)">Data: 10/11/2025</p>
+        <p>Valor: R$1500,00</p>
+        <p style="color: rgb(88, 88, 88)">ID Produtos(s): xxxxx</p>
+      </div>
 
-        <div class="texto">
-          <p>Nome Elegante</p> 
-          <p style="color: rgb(88, 88, 88)">ID: xxxxx</p>
-          <p>Forma de Pagamento: Pix</p>
-          <p style="color: rgb(88, 88, 88)">Data: 10/11/2025</p>
-          <p>Valor: R$1500,00</p>
-          <p style="color: rgb(88, 88, 88)">ID Produtos(s): xxxxx</p>
-        </div>
-        </div>
-
-        
-        <div class="footer">
-          <div class="caixaIcone3" style="justify-content: center;width: 20% ;height: 100px; flex-wrap: wrap;">
-            <div class="divIcone"> <i style="font-size: 40px;" class='bxr  bx-key'    ></i>  </div>
-              <p class="p1" style="font-size: 40px;">KeyBoard</p>
-        </div>
+      <div class="texto">
+        <p>Nome Elegante</p>
+        <p style="color: rgb(88, 88, 88)">ID: xxxxx</p>
+        <p>Forma de Pagamento: Pix</p>
+        <p style="color: rgb(88, 88, 88)">Data: 10/11/2025</p>
+        <p>Valor: R$1500,00</p>
+        <p style="color: rgb(88, 88, 88)">ID Produtos(s): xxxxx</p>
+      </div>
+    </div>
 
 
+    <div class="footer">
+      <div class="caixaIcone3" style="justify-content: center;width: 20% ;height: 100px; flex-wrap: wrap;">
+        <div class="divIcone"> <i style="font-size: 40px;" class='bxr  bx-key'></i> </div>
+        <p class="p1" style="font-size: 40px;">KeyBoard</p>
+      </div>
 
-        
 
-   </div>
 
-   
+
+
+    </div>
+
+
 
 </body>
+
 </html>
