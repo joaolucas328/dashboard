@@ -204,6 +204,7 @@ p {
     width: 100%;
     height: 50px;
     align-items: center;
+    cursor: pointer;
    
 }
 
@@ -233,4 +234,3 @@ p {
     gap: 5px;
     justify-content: space-around;
 }
-
