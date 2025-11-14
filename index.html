@@ -103,10 +103,14 @@
       <p class="p1" style="color: black;">Comparação Lucro Mensal</p>
 
       <div>
-        <canvas id="myPie"></canvas>
+        <canvas class="cv2" id="myPie"></canvas>
       </div>
 
       <script>
+         Chart.overrides.doughnut.plugins.legend = {
+       display: false
+        };
+
         const ct = document.getElementById('myPie');
 
         new Chart(ct, {
@@ -120,16 +124,21 @@
               backgroundColor: ['#25C935', '#000000', ' #25C935', '#000000',],
             }]
           }
-      });
+        });
       </script>
 
       <p class="p1" style="color: black;">Comparação Gasto Mensal</p>
 
       <div>
-        <canvas id="myPie2"></canvas>
+        <canvas class="cv2" id="myPie2"></canvas>
       </div>
 
       <script>
+        Chart.overrides.doughnut.plugins.legend = {
+       display: false
+        };
+
+      
         const cts = document.getElementById('myPie2');
 
         new Chart(cts, {
@@ -137,24 +146,28 @@
           data: {
             labels: ['Assinatura Netflix', 'Tênis Nike', 'PC Gamer', 'Camisa Do Ben 10', 'Maçã', 'GTA 6'],
             datasets: [{
-              label: 'Lucro',
-              data: [9000.30, 8100.67, 15500.43, 18700.99, 10000.01, 1000.00],
+              label: 'Gasto',
+              data: [4320.50, 4530.60, 7240.80, 1870.99, 1000.01, 10000.00],
               borderWidth: 2,
               backgroundColor: ['#25C935', '#000000', ' #25C935', '#000000',]
-              
-            }]}});
+
+            }]},
+    });
       </script>
 
     </div>
 
     <div class="cardG">
-      <p>Overview - Vendas do Mês</p>
+      <p class="p1" style="color: black;">Overview - Vendas do Mês</p>
 
       <div>
         <canvas id="myChart"></canvas>
       </div>
 
       <script>
+        Chart.defaults.plugins.legend = {
+          display: false
+        }
         const ctx = document.getElementById('myChart');
 
         new Chart(ctx, {
@@ -182,50 +195,79 @@
 
     <div class="caixa">
       <p style="font-size: 25px;">Histórico de Transições Recentes</p>
-      <div class="texto">
-        <p>Nome Elegante</p>
-        <p style="color: rgb(88, 88, 88)">ID: xxxxx</p>
-        <p>Forma de Pagamento: Pix</p>
-        <p style="color: rgb(88, 88, 88)">Data: 10/11/2025</p>
-        <p>Valor: R$1500,00</p>
-        <p style="color: rgb(88, 88, 88)">ID Produtos(s): xxxxx</p>
-      </div>
+      <div class="box">
+        <div class="boxtexto">
+          <p>Nome Elegante</p>
+          <p>Nome Elegante</p>
+          <p>Nome Elegante</p>
+          <p>Nome Elegante</p>
+        </div>
 
-      <div class="texto">
-        <p>Nome Elegante</p>
-        <p style="color: rgb(88, 88, 88)">ID: xxxxx</p>
-        <p>Forma de Pagamento: Pix</p>
-        <p style="color: rgb(88, 88, 88)">Data: 10/11/2025</p>
-        <p>Valor: R$1500,00</p>
-        <p style="color: rgb(88, 88, 88)">ID Produtos(s): xxxxx</p>
-      </div>
+        <div class="boxtexto">
+          <p style="color: rgb(88, 88, 88)">ID: xxxxx</p>
+          <p style="color: rgb(88, 88, 88)">ID: xxxxx</p>
+          <p style="color: rgb(88, 88, 88)">ID: xxxxx</p>
+          <p style="color: rgb(88, 88, 88)">ID: xxxxx</p>
+        </div>
 
-      <div class="texto">
-        <p>Nome Elegante</p>
-        <p style="color: rgb(88, 88, 88)">ID: xxxxx</p>
-        <p>Forma de Pagamento: Pix</p>
-        <p style="color: rgb(88, 88, 88)">Data: 10/11/2025</p>
-        <p>Valor: R$1500,00</p>
-        <p style="color: rgb(88, 88, 88)">ID Produtos(s): xxxxx</p>
-      </div>
+        <div class="boxtexto">
+          <p>Forma de Pagamento: Pix</p>
+          <p>Forma de Pagamento: Pix</p>
+          <p>Forma de Pagamento: Pix</p>
+          <p>Forma de Pagamento: Pix</p>
+        </div>
 
-      <div class="texto">
-        <p>Nome Elegante</p>
-        <p style="color: rgb(88, 88, 88)">ID: xxxxx</p>
-        <p>Forma de Pagamento: Pix</p>
-        <p style="color: rgb(88, 88, 88)">Data: 10/11/2025</p>
-        <p>Valor: R$1500,00</p>
-        <p style="color: rgb(88, 88, 88)">ID Produtos(s): xxxxx</p>
+        <div class="boxtexto">
+          <p style="color: rgb(88, 88, 88)">Data: 10/11/2025</p>
+          <p style="color: rgb(88, 88, 88)">Data: 10/11/2025</p>
+          <p style="color: rgb(88, 88, 88)">Data: 10/11/2025</p>
+          <p style="color: rgb(88, 88, 88)">Data: 10/11/2025</p>
+        </div>
+
+        <div class="boxtexto">
+          <p>Valor: R$1500,00</p>
+          <p>Valor: R$1500,00</p>
+          <p>Valor: R$1500,00</p>
+          <p>Valor: R$1500,00</p>
+        </div>
+
+        <div class="boxtexto">
+          <p style="color: rgb(88, 88, 88)">ID Produtos(s): xxxxx</p>
+          <p style="color: rgb(88, 88, 88)">ID Produtos(s): xxxxx</p>
+          <p style="color: rgb(88, 88, 88)">ID Produtos(s): xxxxx</p>
+          <p style="color: rgb(88, 88, 88)">ID Produtos(s): xxxxx</p>
+        </div>
       </div>
     </div>
 
 
     <div class="footer">
-      <div class="caixaIcone3" style="justify-content: center;width: 20% ;height: 100px; flex-wrap: wrap;">
+      <div class="caixaIcone3" style="justify-content: center;width: 20% ;height: 100px;">
         <div class="divIcone"> <i style="font-size: 40px;" class='bxr  bx-key'></i> </div>
         <p class="p1" style="font-size: 40px;">KeyBoard</p>
       </div>
 
+      <div class="caixaIcone3" style="justify-content: center;width: 20% ;height: 100px;">
+        <p class="p1" style="color: white;font-size: 20px;">Gostou do que viu?</p>
+      </div>
+
+      <div class="caixaIcone3" style="justify-content: center;width: 20% ;height: 100px;">
+        <p class="p1" style="color: white;font-size: 20px;">Não fique de fora!</p>
+      </div>
+
+      <div class="caixaIcone3" style="justify-content: center;width: 20% ;height: 100px;flex-direction: column;">
+        <p class="p1" style="color: white;font-size: 20px;">Entre em contato!</p>
+      </div>
+
+      <div class="texto" style="justify-content: center;width: 20% ;height: 100px; flex-direction: column; gap: 5px;">
+        <p class="p1" style="color: rgba(255, 255, 255, 0.836); font-size: 15px;">KeyDashboard@gmail.com</p>
+        <p class="p1" style="color: rgba(255, 255, 255, 0.836); font-size: 15px;">+55 (67)9999-9999</p>
+      </div>
+
+      <div class="texto" style="justify-content: center;width: 20% ;height: 100px; flex-direction: column; gap: 5px;">
+        <p class="p1" style="color: rgba(255, 255, 255, 0.836); font-size: 15px;">Saiba Mais</p>
+        <p class="p1" style="color: rgba(255, 255, 255, 0.836); font-size: 15px;">Regras e Diretrizes</p>
+      </div>
 
 
 
